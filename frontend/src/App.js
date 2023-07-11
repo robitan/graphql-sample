@@ -16,7 +16,7 @@ function App() {
   const { loading, error, data } = useQuery(GET_HELLO);
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>[Error] { error.toString() }</p>;
+  if (error) return <p>[Error] {error.toString()}</p>;
 
   return (
     <div>
