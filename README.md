@@ -9,7 +9,7 @@
 1. Build & Up docker container
 
 ```
-docker-compose -d --build
+docker-compose up -d
 ```
 
 2. Access web pages
