@@ -7,12 +7,14 @@ const { buildSchema } = require('graphql');
 const schema = buildSchema(`
   type Query {
     hello: String
+    hello2: String
   }
 `);
 
 // The root provides a resolver function for each API endpoint
 const root = {
-  hello: () => 'Hello, GraphQL!'
+  hello: () => 'Hello, GraphQL!',
+  hello2: () => 'Hello2, GraphQL!',
 };
 
 const app = express();
